@@ -29,6 +29,7 @@ public class UsingMoveToElementMethod
                     .pause(Duration.ofSeconds(1))
                     .perform();
 
+            // click on technology cluster link from drop down
             action.click(driver.findElement(By.xpath("//ul[@class='navbar-nav menu new-dropdown-content']/child::li/child::a[text()='Technology Clusters']")))
                     .perform();
 

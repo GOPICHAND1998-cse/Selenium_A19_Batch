@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UsingClickAndHoldMethod
 {
@@ -39,6 +41,11 @@ public class UsingClickAndHoldMethod
             WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 
             Thread.sleep(2000);
+
+            List<String> lang = new ArrayList();
+
+            lang.add("\"Ruby\",\"Javascript\",\"Python\"");
+
 
             WebElement passwordField = wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='password']"))));
 
