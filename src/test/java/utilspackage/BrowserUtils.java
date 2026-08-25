@@ -77,7 +77,7 @@ public class BrowserUtils
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(num));
     }
 
-    public void waitforEleentLoad(int num)
+    public void waitforElementLoad(int num)
     {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(num));
     }

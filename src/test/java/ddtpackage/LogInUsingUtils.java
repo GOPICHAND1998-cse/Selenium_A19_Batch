@@ -34,7 +34,7 @@ public class LogInUsingUtils
          browserUtil.maximizeBrowser();
          browserUtil.openURL(url);
          browserUtil.waitForPageLoad(10);
-         browserUtil.waitforEleentLoad(10);
+         browserUtil.waitforElementLoad(10);
 
          driver= browserUtil.getDriver();
 
